@@ -30,7 +30,7 @@ def run_kmeans(n, dataset):
   return silhouette_score(dataset, results, metric="euclidean")
 
 
-n_list = [4]
+n_list = [2,3,4,5,6,7,8]
 silhouette_score_list = [run_kmeans(i, dataset) for i in n_list]
 
 pyplot.scatter(n_list, silhouette_score_list)

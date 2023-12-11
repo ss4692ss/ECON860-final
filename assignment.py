@@ -11,7 +11,7 @@ dataset1 = pandas.read_csv("dataset_final.csv")
 
 dataset1 = dataset1.values
 
-dataset1 = dataset1[:,0:38]
+dataset1 = dataset1[:,0:39]
 
 print(dataset1)
 
@@ -19,7 +19,7 @@ print(dataset1)
 chi2 ,p=calculate_bartlett_sphericity(dataset1)
 print(chi2, p)
 
-machine = FactorAnalyzer(n_factors=38, rotation=None)
+machine = FactorAnalyzer(n_factors=39, rotation=None)
 
 machine.fit(dataset1)
 
