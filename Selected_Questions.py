@@ -10,16 +10,16 @@ from factor_analyzer import FactorAnalyzer
 original_data = pandas.read_csv("dataset_final.csv")
 
 
-# variances = original_data.loc[:, 'Q1':'Q40'].var()
+variances = original_data.loc[:, 'Q1':'Q40'].var()
 
 
-# top_20_questions = variances.nlargest(20)
+top_20_questions = variances.nlargest(20)
 
 
-# selected_questions = top_20_questions.index.tolist()
+selected_questions = top_20_questions.index.tolist()
 
 
-# print(selected_questions)
+print(selected_questions)
 
 
 
