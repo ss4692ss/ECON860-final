@@ -12,7 +12,7 @@ dataset = pandas.read_csv("results.csv")
 
 dataset = dataset.values
 
-dataset = dataset[:,1:3]
+dataset = dataset[:,0:3]
 
 print(dataset)
 
